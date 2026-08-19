@@ -217,7 +217,7 @@ def main() -> int:
     parser.add_argument('--dry-run', action='store_true', help='Print notifications instead of contacting Telegram')
     parser.add_argument('--poll-sec', type=float, default=3)
     parser.add_argument('--state-file', default=str(Path(__file__).resolve().parents[1] / 'runtime' / 'paper_state.json'))
-    parser.add_argument('--max-paper-trades', type=int, default=10)
+    parser.add_argument('--max-paper-trades', type=int, default=1000)
     parser.add_argument('--threshold', type=float, default=.78)
     parser.add_argument('--max-entry-price', type=float, default=.90)
     parser.add_argument('--min-btc-move', type=float, default=70)
